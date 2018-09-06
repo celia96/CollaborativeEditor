@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no", charset="utf-utf-8">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+  .centeredContent {
+    text-align: center;
+  }
+
+  .rightAligned {
+    text-align: right;
+  }
+
+  .leftAligned {
+    text-align: left;
+  }
+
+  .justify {
+    display: flex;
+    justify-content: space-around;
+  }
+
+</style>
+<body style="overflow: hidden; background-color: rgba(0,0,0,0); margin: 0" >
+  <div id="App"></div>
+</body>
+
+<script type="text/jsx">
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {AppContainer} from 'react-hot-loader';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
+const render = () => {
+  const App = require('./app').default;
+  ReactDOM.render(<AppContainer>
+      <MuiThemeProvider>
+        <App />
+      </MuiThemeProvider>
+    </AppContainer>, document.getElementById('App'));
+}
+
+render();
+if (module.hot) {
+  module.hot.accept(render);
+}
+</script>
+</html>
