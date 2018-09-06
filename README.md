@@ -1,5 +1,4 @@
 # CollaborativeEditor
-
 - A contentEditable based collaborative rich text editor using Electron and React
 
 - Enabled real time collaboration with shared cursor and highlighting using WebSockets and Socket.io
