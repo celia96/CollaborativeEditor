@@ -73,7 +73,7 @@ export default class Login extends React.Component {
   render() {
     return (
       <Jumbotron style={styles.jumbotron}>
-        <h1 style={{textAlign: 'center'}}>Welcome to Horizons Docs</h1>
+        <h1 style={{textAlign: 'center'}}>Welcome to Collaborative Editor</h1>
         <h3 style={{textAlign: 'center'}}>Log In</h3>
         <Form horizontal onSubmit={(e) => this.handleSubmit(e)}>
           <FormGroup>
